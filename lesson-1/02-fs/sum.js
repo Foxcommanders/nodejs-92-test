@@ -9,3 +9,4 @@ console.log(sum(1, 2, 3));
 console.log(sum(2, 2, 2));
 console.log(sum(3, 4, 5));
 console.log(sum(5, 6, 7));
+console.log(sum(8, 9, 10));
