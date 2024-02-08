@@ -6,3 +6,10 @@ async function getAll(){
 
     return books;
 }
+
+async function getById(){
+    const books = await readBooks();
+    
+
+    return book;
+}
