@@ -14,6 +14,11 @@ async function getById(){
     return book;
 }
 
-async function create(books){
-    
+async function create(book){
+
+}
+
+async function update(book){
+    const books = await readBooks();
+
 }
