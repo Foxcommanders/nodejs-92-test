@@ -13,3 +13,7 @@ async function getById(){
 
     return book;
 }
+
+async function create(books){
+    
+}
