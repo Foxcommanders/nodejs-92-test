@@ -9,7 +9,7 @@ async function getAll(){
 
 async function getById(){
     const books = await readBooks();
-    
+    const book = books.find();
 
     return book;
 }
