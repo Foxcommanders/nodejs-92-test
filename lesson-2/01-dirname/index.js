@@ -2,5 +2,5 @@ const movies = require("./movies");
 
 movies
 .readMovies()
-.then()
+.then((data) => console.log(data))
 .catch
