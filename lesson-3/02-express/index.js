@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/", (req, res) => {
   console.log(req.method);
-  console.log(res.url);
+  console.log(req.url);
 
   res.send("Home");
 });
