@@ -12,8 +12,8 @@ const server = http.createServer((request, response) => {
         return response.end("Movies");
     }
 
-    
-    response.end();
+    response.statusCode = 404;
+    response.end("Not Found");
 });
 
 server.listen(8080, () => {
