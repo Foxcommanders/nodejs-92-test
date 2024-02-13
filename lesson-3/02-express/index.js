@@ -6,11 +6,11 @@ app.get("/", (req, res) => {
   console.log(req.method);
   console.log(res.url);
 
-  res.end();
+  res.send("Home");
 });
 
 app.get("/movies", (req, res) => {
-  res.end();
+  res.send("Movies");
 });
 
 app.listen(8080, () => {
