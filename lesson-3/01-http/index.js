@@ -4,6 +4,15 @@ const server = http.createServer((request, response) => {
     console.log({request});
     console.log({response});
 
+    if (request.method === "GET" && request.url === "/") {
+        return response.end("Home");
+    }
+
+    if (request.method === "GET" && request.url === "/movies") {
+        return response.end("Movies");
+    }
+
+    
     response.end();
 });
 
