@@ -12,3 +12,8 @@ app.use(
       optionsSuccessStatus: 200,
     })
   );
+
+  app.get("/books", async (req, res) => {
+    const filePath = path.join(__dirname, "books.json");
+
+});
