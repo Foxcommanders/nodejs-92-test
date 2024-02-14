@@ -28,5 +28,9 @@ app.get("/books", async (req, res) => {
 });
 
 app.post("/books", (req, res) => {
-    res.send("Book created successfully");
-  });
+  res.send("Book created successfully");
+});
+
+app.listen(8080, () => {
+  console.log("Server started on port 8080");
+});
