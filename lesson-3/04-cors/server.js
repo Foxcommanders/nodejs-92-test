@@ -26,3 +26,7 @@ app.get("/books", async (req, res) => {
     res.status(500).send("Internal Server Error");
   }
 });
+
+app.post("/books", (req, res) => {
+    res.send("Book created successfully");
+  });
