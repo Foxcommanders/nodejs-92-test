@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-app.get
+app.get("/users", (req, res) => null);
 
 app.get
 
