@@ -2,26 +2,24 @@ const express = require("express");
 
 const app = express();
 
-// app.use("/api", routes);
+// app.get("/movies/1", (req, res) => {
+//   res.send("Get Movie 1");
+// });
 
-// const router = express.Router();
+// app.get("/movies/2", (req, res) => {
+//   res.send("Get Movie 2");
+// });
 
-// router.get("/users", (req, res) => null);
-
-// router.get("/users/1", (req, res) => null);
-
-// router.post("/users", (req, res) => null);
-
-// router.put("/users", (req, res) => null);
-
-// router.delete("/users", (req, res) => null);
+// app.get("/movies/3", (req, res) => {
+//   res.send("Get Movie 3");
+// });
 
 app.get("/movies/:id", (req, res) => {
-    console.log(req.params);
+  const { id } = req.params;
 
-    res.end();
+  res.send(`Get Movie ${id}`);
 });
 
-server.listen(8080, () => {
-    console.log("Server started on port 8080");
-  });
+app.listen(8080, () => {
+  console.log("Server started on port 8080");
+});
