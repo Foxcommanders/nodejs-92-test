@@ -2,8 +2,10 @@ const express = require("express");
 
 const app = express();
 
+const routes = require("./routes");
+
 app.use("/api", routes);
 
-server.listen(8080, () => {
-    console.log("Server started on port 8080");
-  });
+app.listen(8080, () => {
+  console.log("Server stared on port 8080");
+});
