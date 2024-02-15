@@ -4,7 +4,7 @@ const app = express();
 
 app.get("/users", (req, res) => null);
 
-app.get
+app.get("/users/1", (req, res) => null);
 
 app.post
 
