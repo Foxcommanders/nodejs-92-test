@@ -1,15 +1,35 @@
-const express = require("express");
+// const express = require("express");
 
-const router = express.Router();
+// const router = express.Router();
 
-router.get("/users", (req, res) => null);
+const router = require("express").Router();
 
-router.get("/users/1", (req, res) => null);
+router.get("/", (req, res) => {
+  res.send("Ger Movies");
+});
 
-router.post("/users", (req, res) => null);
+router.get("/1", (req, res) => {
+  res.send("Get Movie 1");
+});
 
-router.put("/users", (req, res) => null);
+router.get("/2", (req, res) => {
+  res.send("Get Movie 2");
+});
 
-router.delete("/users", (req, res) => null);
+router.get("/3", (req, res) => {
+  res.send("Get Movie 3");
+});
+
+router.post("/", (req, res) => {
+  res.send("Create Movie");
+});
+
+router.put("/1", (req, res) => {
+  res.send("Update Movie 1");
+});
+
+router.delete("/1", (req, res) => {
+  res.send("Delete Movie 1");
+});
 
 module.exports = router;
