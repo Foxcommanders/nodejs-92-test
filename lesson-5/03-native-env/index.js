@@ -8,4 +8,4 @@ mongoose
     console.log("Database connection success");
     process.exit(0);
   })
-  .cath((error) => console.error("Database connection error", error));
+  .catch((error) => console.error("Database connection error", error));
